@@ -13,6 +13,10 @@ namespace ADOPM2_03_03
         public int Year { get; set; }
         public decimal Price { get; set; }
         override public string ToString() => $"{nameof(Name)}: {Name}, {nameof(Year)}: {Year}, {nameof(Price)}: {Price:N2}";
+        public int CompareTo(IWine other)
+        {
+            return this.Price.CompareTo(other.Price);
+        }
 
         public WineStruct(string name, int year, decimal price) : this()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ADOPM2_03_03
 {
-    interface IWine
+    public interface IWine : IComparable<IWine>    
     {
         string Name { get; set; }
         int Year { get; set; }
