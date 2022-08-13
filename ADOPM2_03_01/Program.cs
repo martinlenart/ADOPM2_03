@@ -11,7 +11,7 @@ namespace ADOPM2_03_01
 			//IPlayingCard card2 = null;
 
 			#region Using a Mockup implementation to test CompareTwoCards
-            IPlayingCard card1 = new PlayingCard1();
+			IPlayingCard card1 = new PlayingCard1();
 			IPlayingCard card2 = new PlayingCard2();
 			#endregion
 
