@@ -9,12 +9,17 @@ namespace ADOPM2_03_02
 			// Now I have an implementation and can make an instance
 			IPlayingCard card1 = new PlayingCard { Color = PlayingCardColor.Diamonds, Value = PlayingCardValue.Three }; 
 			IPlayingCard card2 = new structPlayingCard { Color = PlayingCardColor.Spades, Value = PlayingCardValue.Five };
+			IPlayingCard card3 = new structPlayingCard { Color = PlayingCardColor.Hearts, Value = PlayingCardValue.Two };
+			IPlayingCard card4 = new recPlayingCard (PlayingCardColor.Clubs, PlayingCardValue.Knight);
 
 			// no change in code here, but now I can test run
 			CompareTwoCards(card1, card2);
+			CompareTwoCards(card3, card4);
 
+			/*
 			var card3 = ReturnOne(card1, card2);
             Console.WriteLine(card3.GetType());
+			*/
 		}
 
 		// no change in code here
@@ -35,10 +40,12 @@ namespace ADOPM2_03_02
 			}
 		}
 
+		/*
 		static IPlayingCard ReturnOne(IPlayingCard card1, IPlayingCard card2)
         {
 			if (card1 is PlayingCard) return card1;
 			else return card2;
         }
+		*/
 	}
 }

@@ -22,11 +22,5 @@ namespace ADOPM2_03_02
 		/// The value Two - Ace of the card
 		/// </summary>
 		PlayingCardValue Value { get; init; }
-
-		/// <summary>
-		/// Returns a string containing "Red" for Hearts and Diamonds, otherwise "Black"
-		/// </summary>
-		string BlackOrRed { get; }
-		public string StringToPrint { get; }
 	}
 }

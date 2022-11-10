@@ -6,18 +6,26 @@ namespace ADOPM2_03_03
     {
         static void Main(string[] args)
         {
+            /*
+            WineCellar wineCellar1 = new WineCellar(
+                new IWine[] { new WineMockup(), new WineMockup(), new WineMockup() });
+
+            Console.WriteLine(wineCellar1);
+            Console.WriteLine(wineCellar1.MostExpensive());
+            */
+            
             WineCellar wineCellar1 = new WineCellar(
             new IWine[] {
-                new WineClass("Pesquera Millenium Gran Reserva", 2015, 349M),
+                new WineStruct("Pesquera Millenium Gran Reserva", 2015, 349M),
                 new WineClass("Cune Imperial Gran Reserva", year:2015, 359M),
-                new WineClass("Viña Ardanza Reserva", 2012, price:269M),
+                new WineStruct("Viña Ardanza Reserva", 2012, price:269M),
                 new WineClass("Viña Pedrosa Gran Reserva", 2014, 479M) });
 
             Console.WriteLine($"My WinCellar based on {nameof(WineClass)}");
-            wineCellar1.ViewCellar();
-            Console.WriteLine();
+            Console.WriteLine(wineCellar1);
+            Console.WriteLine(wineCellar1.MostExpensive());
 
-
+            /*
             WineCellar wineCellar2 = new WineCellar(
             new IWine[] {
                 new WineStruct("Pesquera Millenium Gran Reserva", 2015, 349M),
@@ -27,6 +35,7 @@ namespace ADOPM2_03_03
 
             Console.WriteLine($"My WinCellar based on {nameof(WineStruct)}");
             wineCellar2.ViewCellar();
+            */
         }
     }
 

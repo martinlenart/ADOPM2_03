@@ -14,12 +14,15 @@ namespace ADOPM2_03_03
         {
             Wines = wines;
         }
-        public void ViewCellar()
+        public override string ToString()
         {
+            string sRet = null;
             foreach (var wine in Wines)
             {
-                Console.WriteLine(wine);
+                sRet += wine.ToString();
+                sRet += $" ({wine.GetType()})\n";
             }
+            return sRet;
         }
 
         public IWine MostExpensive()

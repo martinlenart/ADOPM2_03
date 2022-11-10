@@ -27,14 +27,5 @@ namespace ADOPM2_03_01
 		/// </summary>
 		PlayingCardValue Value { get; init; }
 
-		/// <summary>
-		/// Returns a string containing "Red" for Hearts and Diamonds, otherwise "Black"
-		/// </summary>
-		string BlackOrRed { get; }
-
-		/// <summary>
-		/// Genererates the string to print - should be better ToString();
-		/// </summary>
-		public string StringToPrint { get; }
 	}
 }

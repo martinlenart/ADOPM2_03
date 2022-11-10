@@ -51,4 +51,6 @@ namespace ADOPM2_03_02
 		public string StringToPrint => $"{Value} of {Color}, a {BlackOrRed} card";
 	}
 
+	record recPlayingCard(PlayingCardColor Color, PlayingCardValue Value) : IPlayingCard { }
+
 }
