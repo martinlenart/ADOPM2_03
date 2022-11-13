@@ -7,15 +7,17 @@ namespace ADOPM2_03_01
         static void Main(string[] args)
         {
 			// As I only have an interface I cannot create an instance, I use null instead
-			//IPlayingCard card1 = null;
-			//IPlayingCard card2 = null;
+			// I cannot run the code - but it compiles
+			IPlayingCard card1 = null;
+			IPlayingCard card2 = null;
 
 			#region Using a Mockup implementation to test CompareTwoCards
-			IPlayingCard card1 = new PlayingCard1();
-			IPlayingCard card2 = new PlayingCard2();
+			//With Mockup I can also run my code awaiting the final imlementation
+			//IPlayingCard card1 = new PlayingCard1();
+			//IPlayingCard card2 = new PlayingCard2();
 			#endregion
 
-			// But I can write my code and compile
+			// I write my code and compile
 			CompareTwoCards(card1, card2);		
 		}
 

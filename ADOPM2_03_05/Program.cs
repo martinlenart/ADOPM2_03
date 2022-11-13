@@ -30,17 +30,18 @@ namespace ADOPM2_03_05
             Shape t2 = new Triangle() { Height = 100, Width = 200 };
 
             Shape r1 = new Shape() { Height = 100, Width = 200 };
-            //var r2 = (Rectangle) r1; //Exception
+            //var r2 = (Rectangle) r1; //compile Exception
 
             Console.WriteLine(t1.Area); // 10000
             Console.WriteLine(((Triangle)t2).Area); // 10000
             Console.WriteLine(((Shape)t2).Height); // 100
-           //Console.WriteLine(r2.Area()); //Exception
+           //Console.WriteLine(r2.Area()); //compile Exception
         }
     }
 
     //Excercises:
-    //1.    Create a derived class Circle, implement Area and Equals
-    //2     Add property to all derived classes that calculate the circumference.
+    //1.    Explain why we get the two compile exceptions if we try to create r2
+    //2.    Create a derived class Circle, implement Area and Equals
+    //3.    Add property to all derived classes that calculate the circumference (omkrets)
     //      Create instances of all derived classes and printout the circumferenance.
 }

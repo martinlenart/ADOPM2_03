@@ -14,12 +14,7 @@ namespace ADOPM2_03_02
 
 			// no change in code here, but now I can test run
 			CompareTwoCards(card1, card2);
-			CompareTwoCards(card3, card4);
-
-			/*
-			var card3 = ReturnOne(card1, card2);
-            Console.WriteLine(card3.GetType());
-			*/
+			CompareTwoCards(card3, card4);			
 		}
 
 		// no change in code here
@@ -39,13 +34,5 @@ namespace ADOPM2_03_02
 					Console.WriteLine($"Both cards same value {card1.Value} but {card2.Color} beats {card1.Color}");
 			}
 		}
-
-		/*
-		static IPlayingCard ReturnOne(IPlayingCard card1, IPlayingCard card2)
-        {
-			if (card1 is PlayingCard) return card1;
-			else return card2;
-        }
-		*/
 	}
 }
