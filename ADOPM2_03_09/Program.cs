@@ -44,9 +44,3 @@ namespace ADOPM2_03_09
             }
         }
     }
-
-    //Excercises:
-    //1.    use "new" instead of "override" keyword. What happens? Why?
-    //2.    Make create a virtual method Area() in  part of Shape. Test with "new" and "override" 
-    //3.    Implement Circumference property in Shape. Virtual?
-}
