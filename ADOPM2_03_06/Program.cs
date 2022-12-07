@@ -16,6 +16,8 @@ namespace ADOPM2_03_06
             public int BaseX { get => base.X; }
             public int SubX { get => this.X; }
             public Subclass(int x) : base(x) { X = 2 * x; }
+            public Subclass(int x, int y) : this(x) { X = x*y; }
+
         }
         static void Main(string[] args)
         {
@@ -23,6 +25,8 @@ namespace ADOPM2_03_06
             Console.WriteLine(s1.X); // 246
             Console.WriteLine(s1.BaseX); // 123
             Console.WriteLine(s1.SubX); // 246
+
+            var s2 = new Subclass(123, 2);
         }
     }
 }

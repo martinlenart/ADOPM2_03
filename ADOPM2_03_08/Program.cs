@@ -22,9 +22,11 @@ namespace ADOPM2_03_08
             myChefs.Add(new GermanChef());
             myChefs.Add(new ItalianChef());
             myChefs.Add(new GermanChef());
+
+            
             myChefs.Add(new SwedishChef());
             myChefs.Add(new SouthSwedishChef());
-
+            
             FavoritesToConsole(myChefs);
         }
 
@@ -33,11 +35,12 @@ namespace ADOPM2_03_08
             foreach (var item in theList)
             {
                 Console.WriteLine(item);
+                
                 if (item is SwedishChef swede)
                 {
-                    Console.WriteLine($"And my name is {swede.Age}");
+                    Console.WriteLine($"And my name is {swede.Name}, " +
+                        $"I am {swede.Age} years old and I love {swede.FavoriteDish}");
                 }
-
             }
         }
     }

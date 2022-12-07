@@ -36,6 +36,7 @@ namespace ADOPM2_03_08
         override public string? Name { get; set; } = "Mauro";
         override public string? FavoriteDish { get; set; } = "pizza";
     }
+    
     public class SwedishChef : Chef
     {
         override public string? Name { get; set; } = "Lars";
@@ -45,5 +46,9 @@ namespace ADOPM2_03_08
     public class SouthSwedishChef : SwedishChef
     {
         override public string? FavoriteDish { get; set; } = "herring";
+        public SouthSwedishChef()
+        {
+            Age = 50;
+        }
     }
 }

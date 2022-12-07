@@ -29,9 +29,20 @@ namespace ADOPM2_03_07
         static void Main(string[] args)
         {
             Shape s1 = new Shape() { Height = 100, Width = 200 };
+            var r1 = new Rectangle() { Height = 100, Width = 200 };
+            var t1 = new Triangle() { Height = 100, Width = 200 };
 
-            //var r1 = (Rectangle) s1;                     //Casting with Exception
-            var r1 = s1 as Rectangle;                      //Casting without Exception
+            
+            //var r4 = (Rectangle) s1;                     //Casting with Exception
+            var r4 = s1 as Rectangle;                      //Casting without Exception
+
+            Shape s2 = (Shape)r1;
+
+            r4 = s2 as Rectangle;
+            Console.WriteLine(r4.Area);
+
+            /*
+            //var r1 = s1 as Rectangle;                      //Casting without Exception
             //Console.WriteLine(r1.Area);                    //Null Exception
 
             var r2 = new Rectangle() { Height = 100, Width = 200 };
@@ -43,6 +54,7 @@ namespace ADOPM2_03_07
                 var s2 = (Shape)r4;                             //Rectangle is a Shape, so this will work
                 Console.WriteLine(s2.Width);
             }
+            */
         }
     }
     //Excercises:
